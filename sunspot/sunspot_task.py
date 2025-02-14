@@ -1,16 +1,15 @@
 import argparse
-import tensornetwork as tn
-from elm_mps import ELM_MPS
-from getdata import read_sunspot_data
-from logging import getLogger, Formatter, StreamHandler
+import csv
 import logging
+import os
+import pickle
+from logging import Formatter, StreamHandler, getLogger
 
 import numpy as np
+import tensornetwork as tn
 import torch
-import os
-import csv
-
-import pickle
+from elm_mps import ELM_MPS
+from getdata import read_sunspot_data
 
 logger = getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -43,7 +42,7 @@ step = args.step
 input_size = 1
 
 # 黒点数データ
-sunspots = read_sunspot_data(file_name='SN_ms_tot_V2.0.txt')
+sunspots = read_sunspot_data(filename='SN_ms_tot_V2.0.txt')
 
 # データのスケーリング
 data_scale = 1.0e-3

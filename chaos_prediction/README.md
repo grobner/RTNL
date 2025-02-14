@@ -1,4 +1,4 @@
-# ipc calculate
+# chaos prediction
 
 The code predicts the lorenz equation.
 

@@ -1,4 +1,4 @@
-# ipc calculate
+# sunspot
 
 The code predicts the sunspot data.
 

@@ -1,4 +1,4 @@
-# ipc calculate
+# NARMA5
 
 The code predicts the NARMA5 data.
 
